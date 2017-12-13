@@ -1,0 +1,9 @@
+<%= form_for @movie,url:{action: 'create'} do |f|%>
+Filmin adı:
+<%= f.text_field :name%><br>
+Açıklaması:
+<%= f.text_area :description %><br>
+Poster:
+<%= f.file_field :avatar%><br>
+<%= f.submit 'Ekle'%>
+<% end %>
